@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Button Generator Using Flexbox</string>
+    <string name="number_of_buttons_to_generate">Number of buttons to generate</string>
+    <string name="generate_buttons">Generate buttons</string>
+</resources>

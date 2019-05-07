@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:text="@string/app_name"
+        android:gravity="center"
+        android:fontFamily="sans-serif-medium"
+        android:textSize="18sp"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_below="@+id/title"
+        android:id="@+id/input_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="30sp">
+        <EditText
+            android:id="@+id/button_numbers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/number_of_buttons_to_generate"
+            android:fontFamily="sans-serif-light"
+            android:textSize="14sp"
+            android:maxLines="1"
+            android:inputType="number"
+            tools:ignore="Autofill" />
+    </android.support.design.widget.TextInputLayout>
+
+    <LinearLayout
+        android:id="@+id/button"
+        android:layout_below="@id/input_count"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+        <Button
+            android:id="@+id/generate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/generate_buttons"
+            android:background="@color/button_background"
+            android:padding="10dp"
+            android:textColor="@color/white"/>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerViewButton"
+        android:layout_below="@id/button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>

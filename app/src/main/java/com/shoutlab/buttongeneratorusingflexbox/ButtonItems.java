@@ -1,0 +1,18 @@
+package com.shoutlab.buttongeneratorusingflexbox;
+
+public class ButtonItems {
+
+    String id;
+
+    public ButtonItems(String id) {
+        this.id = id;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+}
